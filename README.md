@@ -1,0 +1,1 @@
+Simple project to showcase react.js capabilities.

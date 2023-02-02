@@ -1,0 +1,88 @@
+.loginLanding {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+
+    .wrapper {
+        width: 75%;
+        height: 75%;
+        margin-top: 5rem;
+
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+
+        gap: 5rem;
+
+
+        .landingContent {
+
+            display: flex;
+            flex-direction: column;
+
+            height: 70%;
+            
+            align-items: center;
+
+            justify-content: center;
+            text-align: center;
+            
+
+            h1 {
+                color: #16113A;
+                font-size: 4.8rem;
+                // line-height: 150%;
+
+                span{
+                    color: #0fd388;
+                }
+            }
+
+            h3{
+                color: #675f9e;
+                font-size: 3rem;
+            }
+
+            a{                
+                width: fit-content;
+                button{
+                    width: fit-content;
+                    border: none;
+                    color: #16113A;
+                    background-color: #0FD354;
+                    font-size: 2rem;
+                    padding: 1rem 3rem;
+                    font-weight: 600;
+                    border-radius: 5rem;
+                    cursor: pointer;
+                }
+            }
+        }
+
+
+    }
+
+}
+
+.landingImage{
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    place-items: center;
+
+
+    .wrapper {
+        position: relative;
+        top: -25%;
+        width: 85%;
+        height: 100vh;
+
+        background-image: url("https://images.klipfolio.com/website/public/26552c14-4d3a-4c0a-bb91-d802efd26170/kpi-category-directory_1.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 50%;
+        
+    }
+ }

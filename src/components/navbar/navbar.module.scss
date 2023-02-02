@@ -1,0 +1,54 @@
+.navbarContainer {
+    height: 10rem;
+    width: 100vw;
+
+    display: grid;
+    place-items: center;
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    
+
+
+    .wrapper {
+        width: 95%;
+        height: 75%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+
+
+
+        .logo{
+            background: url("https://images.ctfassets.net/0kz5nrpxuzuo/01N2rbP2YWx9UoQX0sXr1q/8dae3fa7f053798274ef82144bd15010/geckoboard.png?q=90&w=192");
+            height: 4rem;
+            width: 4rem;
+            background-size: contain;
+            background-position: 50%;
+            background-repeat: no-repeat;
+
+            display: flex;
+            align-items: center;
+            
+            h1{
+                position: relative;
+                right: -150%;
+
+                
+                font-size: 2.4rem;
+
+                color: #0FD354;
+
+                
+            }
+        }
+
+
+    }
+
+}
