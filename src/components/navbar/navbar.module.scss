@@ -19,7 +19,7 @@
         height: 75%;
         display: flex;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: space-between;
 
 
 
@@ -40,12 +40,23 @@
                 right: -150%;
 
                 
-                font-size: 2.4rem;
+                font-size: 2.6rem;
 
                 color: #0FD354;
 
                 
             }
+        }
+
+        button{
+            width: fit-content;
+            border: none;
+            color: #16113A;
+            background-color: #0FD354;
+            font-size: 1.6rem;            padding: 1rem 3rem;
+            font-weight: 600;
+            border-radius: 5rem;
+            cursor: pointer;
         }
 
 

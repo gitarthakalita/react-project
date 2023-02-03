@@ -9,7 +9,7 @@ import {
 } from 'react-router-dom';
 
 import './index.css'
-import PricingPage from './pages/pricing';
+import PricingPage from './pages/pricingPage';
 import Error from './Error';
 import SignInPage from './pages/signInPage';
 import SignUpPage from './pages/signUpPage';
