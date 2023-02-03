@@ -1,23 +1,26 @@
-export const pricingData = [
+ const pricingData = [
     {
+        id:1,
         title: "Basic",
-        description:"",
+        description:"Basic dashboards to get you started",
+        dashboardCount:[1],  
         includes: [
-            {dashboardCount:1},  
+            
             "1 Users"
         ],
         priceAmount: "Free",
-        pricingImageUrl: "",
+        pricingImageUrl: "https://icons.veryicon.com/png/o/miscellaneous/standard-general-linear-icon/dashboard-80.png",
         features: [
             "Core data sources",
             "sharing links"
         ]
     },
     {
+        id:2,
         title: "Essential",
         description: "Easily build and share dashboards that display essential business data.",
-        includes:[
-            {dashboardCount:1}, 
+        dashboardCount:[1,3,5],  
+        includes:[            
             "3 Users", 
             "Send to 1 TV"
         ],
@@ -30,10 +33,11 @@ export const pricingData = [
         ]
     },
     {
+        id:3,
         title: "Professional",
         description: "Connect to over 80 data sources and keep teams in the loop with advanced sharing options.",
-        includes:[
-            {dashboardCount:1}, 
+        dashboardCount:[1,5, 10],  
+        includes:[            
             "10 Users", 
             "Send to 3 TV"
         ],
@@ -49,10 +53,11 @@ export const pricingData = [
         ]
     },
     {
+        id:4,
         title: "Scale",
         description: "Introduce KPI dashboards into multiple areas of your business.",
-        includes:[
-            {dashboardCount:30}, 
+        dashboardCount:[30, 31],  
+        includes:[     
             "25 Users", 
             "Send to 10 TV"
         ],
@@ -67,3 +72,6 @@ export const pricingData = [
         ]
     }
 ]
+
+
+export default pricingData;
