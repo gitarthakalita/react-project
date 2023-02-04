@@ -1,4 +1,6 @@
- const pricingData = [
+
+
+const pricingData = [
     {
         id:1,
         title: "Basic",
@@ -9,7 +11,7 @@
             "1 Users"
         ],
         priceAmount: "Free",
-        pricingImageUrl: "https://icons.veryicon.com/png/o/miscellaneous/standard-general-linear-icon/dashboard-80.png",
+        pricingImageUrl: "https://firebasestorage.googleapis.com/v0/b/kpistory-app.appspot.com/o/assets%2Fbasic.svg?alt=media&token=bd21d2fd-368e-49fc-a17d-5ec7306a2350",
         features: [
             "Core data sources",
             "sharing links"
@@ -25,7 +27,7 @@
             "Send to 1 TV"
         ],
         priceAmount: "3920.00",
-        pricingImageUrl: "",
+        pricingImageUrl: "https://firebasestorage.googleapis.com/v0/b/kpistory-app.appspot.com/o/assets%2Fessential.svg?alt=media&token=e6f5f3b1-93d8-49fb-8fba-b5358f02ec7e",
         features: [
             "Everything in Basic",
             "Dashboard Loops",
@@ -42,7 +44,7 @@
             "Send to 3 TV"
         ],
         priceAmount: "7920.00",
-        pricingImageUrl: "",
+        pricingImageUrl: "https://firebasestorage.googleapis.com/v0/b/kpistory-app.appspot.com/o/assets%2Fpro.svg?alt=media&token=4a8dd08e-cade-4553-ae7a-3b07fe954f97",
         features: [
             "Everything in Essential, plus...",
             "Pro data sources",
@@ -62,7 +64,7 @@
             "Send to 10 TV"
         ],
         priceAmount: "55,920.00",
-        pricingImageUrl: "",
+        pricingImageUrl: "https://firebasestorage.googleapis.com/v0/b/kpistory-app.appspot.com/o/assets%2Fscale.svg?alt=media&token=75171ef4-515e-405b-b0ed-6914a01588bd",
         features: [
             "Everything in Pro, plus...",
             "Single Sign On (SSO)",

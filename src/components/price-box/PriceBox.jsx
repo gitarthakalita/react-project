@@ -4,6 +4,9 @@ import styles from './priceBox.module.scss';
 
 const PriceBox = ({ item }) => {
   const { title, description, priceAmount, includes, pricingImageUrl, features, dashboardCount } = item;
+
+  
+
   return (
     <div className={styles.priceBoxContainer}>
       <div className={styles.item}>
@@ -18,7 +21,11 @@ const PriceBox = ({ item }) => {
         <p className={styles.description}>{description}</p>
       </div>
       <div className={styles.item}>
-        <h3 className={styles.price}>{priceAmount}</h3>
+        {
+          priceAmount === "Free" ? <h3 className={styles.price}>
+          {priceAmount}</h3> : <h3 className={styles.price}>
+          {priceAmount} <span>INR/Month</span></h3>
+        }
       </div>
 
 
@@ -28,7 +35,7 @@ const PriceBox = ({ item }) => {
           {
             dashboardCount.map((dashCount, index) => (
 
-              dashCount < 31 ? <option value={dashCount}>{dashCount} Dashboard</option> : <option value="Contact Sales">Contact Sales</option>
+              dashCount < 31 ? <option key={index} value={dashCount}>{dashCount} Dashboard</option> : <option key={index} value="Contact Sales">Contact Sales</option>
 
             ))
           }

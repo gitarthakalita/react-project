@@ -14,6 +14,9 @@ import Error from './Error';
 import SignInPage from './pages/signInPage';
 import SignUpPage from './pages/signUpPage';
 
+
+import { UserProvider } from './contexts/UserContext';
+
 const router = createBrowserRouter([
   {
     path:"/",
@@ -38,7 +41,9 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <UserProvider>
     <RouterProvider router={router}>
     </RouterProvider>
+    </UserProvider>
   </React.StrictMode>,
 )

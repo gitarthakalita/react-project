@@ -1,17 +1,19 @@
-import React, { useEffect } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import Layout from '../../components/layout/Layout'
+import UserContext from '../../contexts/UserContext';
 import styles from './landingPage.module.scss';
 
-import {auth} from '../../firebase/firebase';
 
 const LandingPage = () => {
 
 
 const navigate = useNavigate();
 
+const isUser = useContext(UserContext)
+
 useEffect(()=>{
-  auth.currentUser ? navigate('/pricing') : null
+  isUser ? navigate('/pricing') : null
 })
   
 

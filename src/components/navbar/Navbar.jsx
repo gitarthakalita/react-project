@@ -1,18 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link , useNavigate} from 'react-router-dom';
 import styles from './navbar.module.scss';
 
-import {getAuth, signOut} from 'firebase/auth';
+import {signOut} from 'firebase/auth';
 
-
+import {auth} from '../../firebase/firebase';
+import UserContext from '../../contexts/UserContext';
 
 
 const Navbar = () => {
   const navigate = useNavigate();
 
-  const auth = getAuth();
 
-  
+const isUser=useContext(UserContext)
 
   return (
     <div className={styles.navbarContainer}>
@@ -20,7 +20,8 @@ const Navbar = () => {
             <Link to="/"><div className={styles.logo}><h1>KPIBoard</h1></div>              
             </Link>
             {
-              auth.currentUser ? <button 
+              
+              isUser ? <button 
               onClick={ 
                 async () => {
                   await signOut(auth).then(() =>{

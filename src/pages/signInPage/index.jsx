@@ -56,8 +56,8 @@ const SignInPage = () => {
                 type="submit"
                 onClick={onLogin}
                 >Sign In</button>
-              <span>Or</span>
-              <button className={styles.buttonGoogle} type="button"> Login with Google </button>
+              {/* <span>Or</span>
+              <button className={styles.buttonGoogle} type="button"> Login with Google </button> */}
             </div>
           </form>
           <p>Don't have an account? <Link to="/sign-up">Create a new one</Link></p>

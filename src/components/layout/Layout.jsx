@@ -2,11 +2,19 @@ import React from 'react';
 import Navbar from '../navbar/Navbar';
 import styles from './layout.module.scss';
 
-const Layout = ({children}) => {
+
+
+
+const Layout = ({ children }) => {
+
+
   return (
-    <section className={styles.container}> 
-    <Navbar/>
-    {children}</section>
+    
+      <section className={styles.container}>
+        <Navbar />
+        {children}
+      </section>
+    
   )
 }
 
